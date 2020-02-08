@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 12px;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100%;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 60px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.wrapper .song-img {
+  width: 50%;
+  height: 0;
+  padding-top: 50%;
+  border: 1px solid black;
+  margin: 0  auto;
+  position: relative;
+}
+.wrapper .song-img .img-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+}
+.wrapper .song-img .img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.song-info {
+  width: 100%;
+  text-align: center;
+  height: 126px;
+  margin-top: 40px;
+}
+.song-info .song-name {
+  font-size: 2em;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.86);
+}
+.song-info .singer-name,
+.song-info .album-name {
+  font-size: 1em;
+  line-height: 16px;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.pro {
+  display: flex;
+}
+.pro .cur-time,
+.pro .all-time {
+  color: #fff;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.pro .pro-wrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.pro .pro-wrapper .pro-bottom,
+.pro .pro-wrapper .pro-top {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  top: 20px;
+}
+.pro .pro-wrapper .pro-top {
+  transform: translateX(-100%);
+  background-color: green;
+  position: relative;
+}
+.pro .pro-wrapper .pro-top .slider-pointer {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: green;
+  top: -5px;
+  right: -5px;
+}
+.control {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.control .btn-wrapper {
+  flex: 1;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 20px 20px;
+}
+.control .like-btn {
+  background-image: url("../images/icon-like.png");
+}
+.control .like-btn.liking {
+  background-image: url("../images/icon-like-solid.png");
+}
+.control .prev-btn {
+  background-image: url("../images/icon-prev.png");
+}
+.control .play-btn {
+  background-image: url("../images/icon-play.png");
+}
+.control .play-btn.pause {
+  background-image: url("../images/icon-pause.png");
+}
+.control .next-btn {
+  background-image: url("../images/icon-next.png");
+}
+.control .list-btn {
+  background-image: url("../images/icon-list.png");
+}
